@@ -17,6 +17,13 @@
     "moduleResolution": "node",
     "importHelpers": true,
     "target": "es2017",
+    "paths": {
+      "storage": [
+        "dist/storage/storage",
+        "dist/storage",
+        "projects/storage/src/public-api.ts"
+      ]
+    },
     "module": "es2020",
     "lib": [
       "es2020",
