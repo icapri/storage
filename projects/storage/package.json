@@ -2,7 +2,7 @@
   "name": "storage-server",
   "description": "Type-secure services for localStorage and sessionStorage of the Storage API",
   "author": "I. Kapri",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "scripts": {
     "publish": "npm publish --access=public"
   },
