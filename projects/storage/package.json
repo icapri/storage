@@ -2,7 +2,7 @@
   "name": "storage-server",
   "description": "Type-secure services for localStorage and sessionStorage of the Storage API",
   "author": "I. Kapri",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "scripts": {
     "publish": "npm publish --access=public"
   },
@@ -13,7 +13,12 @@
   "bugs": {
     "url": "https://github.com/icapri/storage/issues"
   },
-  "keywords": ["javascript", "angular", "typescript", "storage"],
+  "keywords": [
+    "javascript",
+    "angular",
+    "typescript",
+    "storage"
+  ],
   "homepage": "https://github.com/icapri/storage",
   "license": "MIT",
   "peerDependencies": {

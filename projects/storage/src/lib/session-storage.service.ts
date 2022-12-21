@@ -17,6 +17,10 @@ export class SessionStorage extends StorageService implements Storable {
     super(window.sessionStorage);
   }
 
+  override all<TValue = never>(): Map<string, TValue> {
+    return super.all();
+  }
+
   override clear(): void {
     super.clear();
   }

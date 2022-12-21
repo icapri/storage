@@ -42,6 +42,26 @@ export class StorageService {
   }
 
   /**
+   * Gets all the items stored in the storage.
+   *
+   * @returns the dictionary of key-value pairs stored in the storage.
+   */
+  protected all<TValue = never>(): Map<string, TValue> {
+    const dictioary = new Map<string, TValue>();
+    for (let i = 0; i < this.count; i++) {
+      const key = this.key(i as PositiveInteger<number>);
+      if (key) {
+        const value = this.get<TValue>(key);
+        if (value) {
+          dictioary.set(key, value);
+        }
+      }
+    }
+
+    return dictioary;
+  }
+
+  /**
    * Clears all the dictionary items stored in the storage.
    */
   protected clear(): void {

@@ -17,6 +17,10 @@ export class LocalStorage extends StorageService implements Storable {
     super(window.localStorage);
   }
 
+  override all<TValue = never>(): Map<string, TValue> {
+    return super.all();
+  }
+
   override clear(): void {
     super.clear();
   }

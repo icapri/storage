@@ -19,6 +19,13 @@ export interface Storable {
   get keys(): string[];
 
   /**
+   * Gets all the items stored in the storage.
+   *
+   * @returns the dictionary of key-value pairs stored in the storage.
+   */
+  all<TValue = never>(): Map<string, TValue>;
+
+  /**
    * Clears all the storage.
    */
   clear(): void;
